@@ -16,7 +16,7 @@ const Text = styled.span`
 `;
 
 const Divider = styled.div`
-  width: 400px;
+  max-width: 400px;
   margin: 20px auto;
   border-top: 1px solid grey;
 `;

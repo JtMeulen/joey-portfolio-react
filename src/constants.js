@@ -1,44 +1,51 @@
 const LEOVEGAS = {
-  route: 'leovegas',
+  route: '/leovegas',
   name: 'LeoVegas',
-  icon: '/assets/icons/lion.svg',
+  thumbnail: '/assets/thumbnails/leovegas_thumb.png',
 };
 
 const SANDRADCM = {
-  route: 'sandradcm',
+  route: '/sandradcm',
   name: 'SandraDCM',
-  icon: '',
+  thumbnail: '/assets/thumbnails/sandradcm_thumb.png',
 };
 
 const BURGERBUILDER = {
-  route: 'burgerbuilder',
+  route: '/burgerbuilder',
   name: 'Burger Builder',
-  icon: '',
+  thumbnail: '/assets/thumbnails/burgerbuilder_thumb.png',
 };
 
 const ICONSTRUCT = {
-  route: 'iconstruct',
+  route: '/iconstruct',
   name: 'iConstruct',
-  icon: '',
+  thumbnail: '',
+};
+
+const JSORGANISER = {
+  route: '/jsorganiser',
+  name: 'J&S Organiser',
+  thumbnail: '/assets/thumbnails/jsorganiser_thumb.png',
 };
 
 const UPNEXT = {
-  route: 'upnext',
+  route: '/upnext',
   name: 'UpNext',
-  icon: '',
+  thumbnail: '/assets/thumbnails/upnext_thumb.png',
 };
 
 const UNITY = {
-  route: 'unity',
+  route: '/unity',
   name: 'Unity',
-  icon: '',
+  thumbnail: '',
 };
 
-export const PAGES = [
+export const PAGE_DETAILS = [
   LEOVEGAS,
   SANDRADCM,
   BURGERBUILDER,
   ICONSTRUCT,
+  JSORGANISER,
   UPNEXT,
   UNITY,
 ];
