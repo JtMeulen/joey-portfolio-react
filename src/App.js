@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import { Sidebar } from './components';
+import { defaultTheme } from './themes';
+import { Navbar, Header, Carousel } from './components';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,25 +14,41 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const AppContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  overflow: hidden;
-
-  /* TODO: Create global vars for colors */
-  color: #dedede;
-  background-color: #15181c;
+  background: lightsteelblue; /* TODO just for testing to see the bg color */
 `
 
-const App = () => {
+export default () => {
   return (
     <Fragment>
-      <GlobalStyle />
-      <AppContainer>
-        <Sidebar />
+      <BrowserRouter>
+        <GlobalStyle />
+        <ThemeProvider theme={defaultTheme}>
+          <AppContainer>
+            <Navbar />
+            <Header />
+            <Carousel content={[1,2,3]}/>
 
-      </AppContainer>
+            {/* Web pages here */}
+            <Switch>
+              <Route path="/123" exact render={()=> <div>yo</div>} />
+              <Route path="/eyo" exact render={()=> <div>eyo</div>} />
+            </Switch>
+
+            <Carousel content={[4,5,6]}/>
+            {/* Game pages here */}
+            <Switch>
+              <Route path="/abc" exact render={()=> <div>yo</div>} />
+              <Route path="/ayo" exact render={()=> <div>eyo</div>} />
+            </Switch>
+
+            {/* Some adititional info about me */}
+
+            {/* Footer with extra stuff */}
+          </AppContainer>
+        </ThemeProvider>
+      </BrowserRouter>
     </Fragment>
   )
 }
-
-export default App;
