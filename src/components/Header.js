@@ -2,29 +2,38 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 60px 0;
-  background-color: ${props => props.theme.colors.headerBG};
+  height: ${props => props.theme.sizes.header_height};
+  background-image: url('/assets/images/header_bg.jpg');
+  background-size: cover;
+  background-position: top center;
+`;
+
+const ColorOverlay = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: ${props => props.theme.colors.dark_overlay};
 `;
 
 const Text = styled.span`
-  width: 100%;
+  position: relative;
   font-size: ${props => props.size}px;
-  display: block;
+  font-weight: ${props => props.weight};
+  color: ${props => props.theme.colors.font_white};
   text-align: center;
-  color: ${props => props.theme.colors.fontWhite};
-`;
-
-const Divider = styled.div`
-  max-width: 400px;
-  margin: 20px auto;
-  border-top: 1px solid grey;
+  text-transform: uppercase;
 `;
 
 export default () => (
   <Container>
-    <Text size={64}>Joey ter Meulen</Text>
-    <Divider />
-    <Text size={32}>Frontend Web Developer</Text>
+    <ColorOverlay />
+    <Text size={60} weight={600}>Joey ter Meulen</Text>
+    <Text size={16} weight={400}>Frontend Web Developer</Text>
   </Container>
 );

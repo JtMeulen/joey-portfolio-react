@@ -1,13 +1,12 @@
 export const defaultTheme = {
   colors: {
-    fontWhite: 'white',
-    navbarBG: '#151617',
-    headerBG: '#1f2933',
-    carouselCardBG: '#fcf8e1',
+    font_white: 'white',
+    dark_overlay: 'rgba(0,0,0,0.2)',
+    about_description_bg: '#5c5d5e',
+    about_contact_bg: '#34383d'
   },
   sizes: {
-    navbarHeight: '60px',
-    carouselCardWidth: '476px',
-    carouselCardHeight: '230px'
+    header_height: '520px',
+    about_height: '420px',
   }
 };

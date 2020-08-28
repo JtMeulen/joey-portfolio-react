@@ -3,12 +3,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 100%;
-  height: 300px;
-  background: lightsalmon;
+  height: 500px;
 `;
 
-export default (props) => (
+export default () => (
   <Container>
-    {props.content.name}
   </Container>
 );
