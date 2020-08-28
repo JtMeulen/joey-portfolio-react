@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { defaultTheme } from './themes';
-import { Header, About, Portfolio, Footer } from './components';
+import { Header, About, Skills, Portfolio, Footer } from './components';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,8 +18,8 @@ export default () => (
       <ThemeProvider theme={defaultTheme}>
         <Header />
         <About />
+        <Skills />
         <Portfolio />
-        {/* skills graphs? */}
         <Footer />
       </ThemeProvider>
   </Fragment>
