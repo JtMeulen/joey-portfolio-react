@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { github, linkedin } from '../icons';
 
 // TODO fix colors and and add to defaults
 const Container = styled.div`
@@ -47,12 +46,18 @@ const Download = styled.a`
 `
 
 const IconLink = styled.a`
-  color: white;
   margin-right: 10px;
   font-size: 40px;
-  transition: color .2s linear;
+  opacity: 1;
+  transition: opacity .2s linear;
 
-  &:hover {
+  & img {
+    width: 40px;
+  }
+
+  &:hover,
+  &.active {
+    opacity: .8;
     color: lightgrey;
   }
 `
@@ -69,10 +74,10 @@ export default () => (
         &nbsp;to download my CV directly.
       </Text>
       <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
-        <FontAwesomeIcon icon={faLinkedin} />
+        <img src={linkedin} />
       </IconLink>
       <IconLink href={"https://github.com/JtMeulen"} target={"_blank"} rel={"nofollow"}>
-        <FontAwesomeIcon icon={faGithubSquare} />
+        <img src={github} />
       </IconLink>
     </Inner>
   </Container>

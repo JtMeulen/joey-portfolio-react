@@ -6,6 +6,7 @@ export {default as graphql} from './graphql.svg';
 export {default as html} from './html5-original.svg';
 export {default as javascript} from './javascript-original.svg';
 export {default as jquery} from './jquery-original.svg';
+export {default as linkedin} from './linkedin-plain.svg';
 export {default as mongodb} from './mongodb-original.svg';
 export {default as nodejs} from './nodejs-original-wordmark.svg';
 export {default as react} from './react-original.svg';
