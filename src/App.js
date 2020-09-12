@@ -3,10 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 import { Header, Navbar, About, Skills, Portfolio, Footer } from './components';
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  html, body {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: 'Merriweather Sans', sans-serif;
+    scroll-behavior: smooth;
   }
 `;
 

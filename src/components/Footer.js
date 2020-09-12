@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 export default () => (
-  <Container>
+  <Container id="footer">
     <span>Joey ter Meulen, 2020</span>
   </Container>
 );

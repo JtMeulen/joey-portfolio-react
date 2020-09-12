@@ -12,6 +12,6 @@ const Container = styled.div`
 
 export default () => (
   <Container>
-    Navvbaarrr
+    <a href="#footer">Navvbaarrr</a>
   </Container>
 );
