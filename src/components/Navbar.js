@@ -2,19 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  position: sticky;
+  top: 0;
+  margin-top: -60px;
+  height: 60px;
   width: 100%;
-  height: 100px;
-  color: white;
-  background: #343434;
-
-  & span {
-    margin-left: 20px;
-    line-height: 100px;
-  }
+  background-color: rgba(240,240,240,0.7);
 `;
 
 export default () => (
   <Container>
-    <span>Joey ter Meulen, 2020</span>
+    Navvbaarrr
   </Container>
 );

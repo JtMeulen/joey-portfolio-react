@@ -25,7 +25,7 @@ const Container = styled.div`
 const Grid = styled.div`
   display: grid;
   max-width: 400px;
-  margin: 60px auto 100px;
+  margin: 80px auto;
   grid-template-columns: auto auto auto auto;
 `;
 

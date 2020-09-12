@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { Header, About, Skills, Portfolio, Footer } from './components';
+import { Header, Navbar, About, Skills, Portfolio, Footer } from './components';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,6 +14,7 @@ export default () => (
   <Fragment>
     <GlobalStyle />
     <Header />
+    <Navbar />
     <About />
     <Skills />
     <Portfolio />

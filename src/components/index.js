@@ -1,5 +1,6 @@
 // Main elements
 export {default as Header} from './Header.js';
+export {default as Navbar} from './Navbar.js';
 export {default as About} from './About.js';
 export {default as Skills} from './Skills.js';
 export {default as Portfolio} from './Portfolio.js';
