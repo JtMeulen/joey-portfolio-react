@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-
-import { defaultTheme } from './themes';
+import { createGlobalStyle } from 'styled-components';
 import { Header, About, Skills, Portfolio, Footer } from './components';
 
 const GlobalStyle = createGlobalStyle`
@@ -14,13 +12,11 @@ const GlobalStyle = createGlobalStyle`
 
 export default () => (
   <Fragment>
-      <GlobalStyle />
-      <ThemeProvider theme={defaultTheme}>
-        <Header />
-        <About />
-        <Skills />
-        <Portfolio />
-        <Footer />
-      </ThemeProvider>
+    <GlobalStyle />
+    <Header />
+    <About />
+    <Skills />
+    <Portfolio />
+    <Footer />
   </Fragment>
 );

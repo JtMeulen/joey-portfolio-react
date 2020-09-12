@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 100%;
+  height: 250px;
   box-sizing: border-box;
   padding: 20px;
-  background: darkgrey;
+  color: white;
+  background: #343434;
 `;
 
 export default () => (
   <Container>
-    <p>Hello, welcom to the footer</p>
-    <p>Bye thanks for checking</p>
-    <p>Joey ter Meulen 2020</p>
+    <p>Joey ter Meulen, 2020</p>
   </Container>
 );

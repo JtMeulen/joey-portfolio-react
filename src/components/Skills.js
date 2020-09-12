@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Title } from '../components';
 import { git, javascript,react, redux, nodejs, css, html, csharp, jquery, mongodb, unity, graphql } from '../icons';
 
 const GRID_ITEMS = [
@@ -21,19 +22,10 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const Title = styled.p`
-  margin: 20px 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 44px;
-  text-align: center;
-  text-decoration: underline;
-`;
-
 const Grid = styled.div`
   display: grid;
   max-width: 400px;
-  margin: 0 auto 20px;
+  margin: 60px auto 100px;
   grid-template-columns: auto auto auto auto;
 `;
 
@@ -58,7 +50,7 @@ const renderGridItems = () => {
   return GRID_ITEMS.map((i) => {
     return (
       <GridItem key={i.name}>
-        <img src={i.icon} />
+        <img src={i.icon} alt={i.name} />
         <span>{i.name}</span>
       </GridItem>
     );
@@ -67,7 +59,7 @@ const renderGridItems = () => {
 
 export default () => (
   <Container>
-    <Title>Stack that I work with</Title>
+    <Title>Tech Stack</Title>
     <Grid>
       {renderGridItems()}
     </Grid>

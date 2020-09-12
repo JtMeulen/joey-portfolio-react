@@ -9,3 +9,4 @@ export {default as Footer} from './Footer.js';
 export {default as AboutDescription} from './AboutDescription.js';
 export {default as AboutContact} from './AboutContact.js';
 export {default as Project} from './Project.js';
+export {default as Title} from './Title.js';

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Slider from 'infinite-react-carousel';
 import styled from 'styled-components';
 
-import { Project } from '../components';
+import { Project, Title } from '../components';
 import { PAGE_DETAILS } from '../constants';
 
 const Container = styled.div`
@@ -11,10 +11,12 @@ const Container = styled.div`
 `;
 
 export default () => (
-  // TODO: create custom dots and put on top. Maybe use logo's instead of dots
-  <Slider dots duration={70}>
-    {PAGE_DETAILS.map((project) => {
-      return <Project project={project} />;
-    })}
-  </Slider>
+  <Fragment>
+    <Title>Web Portfolio</Title>
+    <Slider dots duration={70}>
+      {PAGE_DETAILS.map((project) => {
+        return <Project project={project} />;
+      })}
+    </Slider>
+  </Fragment>
 );

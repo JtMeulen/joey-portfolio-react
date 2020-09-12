@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  /* TODO define height and put in theme folder */
   width: 100%;
   height: 600px;
   display: flex;
-  background-color: ${props => props.color};
+  /* background-color: ${props => props.color}; */
 
   @media (max-width: 768px) {
     flex-flow: column;
@@ -17,7 +16,7 @@ const Container = styled.div`
 const ProjectDetails = styled.div`
   flex-grow: 2;
   height: 100%;
-  background-color: ${props => props.theme.colors.light_overlay};
+  /* background-color: rgba(255,255,255,0.2); */
 `;
 
 const Image = styled.div`

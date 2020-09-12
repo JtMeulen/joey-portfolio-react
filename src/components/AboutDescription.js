@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 50%;
-  background-color: ${props => props.theme.colors.about_description_bg};
-  color: ${props => props.theme.colors.font_white};
+  background-color: #4ac2be;
+  color: white;
   box-sizing: border-box;
-  padding: 20px 40px 40px;
+  padding: 60px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -27,18 +27,9 @@ const Text = styled.p`
   margin: 8px 0;
 `;
 
-const Title = styled.p`
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 44px;
-  text-decoration: underline;
-`;
-
 export default () => (
   <Container>
     <Inner>
-      <Title>About me</Title>
       <Text>
         Hello! I am Joey, a 31-year-old frontend web developer from Amsterdam, the Netherlands.
         In 2017 I discovered coding and after extensive home studies, I officially joined the development industry
