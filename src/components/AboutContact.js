@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 // TODO fix colors and and add to defaults
-
 const Container = styled.div`
   width: 50%;
   background-color: ${props => props.theme.colors.about_contact_bg};
