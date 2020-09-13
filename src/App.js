@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { createGlobalStyle } from 'styled-components';
+import Scroll from 'react-scroll';
 import { Header, Navbar, About, Skills, Portfolio, Footer } from './components';
 
 const GlobalStyle = createGlobalStyle`
@@ -7,18 +8,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Merriweather Sans', sans-serif;
-    scroll-behavior: smooth;
   }
 `;
 
 export default () => (
   <Fragment>
     <GlobalStyle />
-    <Header />
+    <Scroll.Element name="header"><Header /></Scroll.Element>
     <Navbar />
-    <About />
-    <Skills />
-    <Portfolio />
+    <Scroll.Element name="about"><About /></Scroll.Element>
+    <Scroll.Element name="skills"><Skills /></Scroll.Element>
+    <Scroll.Element name="portfolio"><Portfolio /></Scroll.Element>
     <Footer />
   </Fragment>
 );
