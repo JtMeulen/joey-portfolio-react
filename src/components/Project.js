@@ -4,18 +4,18 @@ import styled from 'styled-components';
 export default (props) => {
   const [idx, setIdx] = useState(0);
   const totalImages = props.project.thumbnails.length;
-  let timeout;
 
   const changeIdx = () => {
-    clearTimeout(timeout);
     setIdx(idx + 1 === totalImages ? 0 : idx + 1);
   };
 
   useEffect(() => {
-    timeout = setTimeout(() => {
-      changeIdx();
-    }, 3000);
-  }, [idx]);
+    if(props.currSlide == props.slideNo) {
+      setTimeout(() => {
+        changeIdx();
+      }, 4000);
+    }
+  }, [idx, props.currSlide]);
 
   return (
     <Container>
@@ -26,7 +26,7 @@ export default (props) => {
         <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
       </ProjectDetails>
       <ImageContainer image={props.project.thumbnail}>
-        <img src={props.project.thumbnails[idx]} onClick={changeIdx} />
+        <img src={props.project.thumbnails[idx]} />
       </ImageContainer>
     </Container>
   )
