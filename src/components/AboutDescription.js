@@ -38,15 +38,6 @@ export default () => (
         With 3 years of working experience, React.js is my main strength - but in my spare time, Unity and C# take over.
         Coding games is just as fun!
       </Text>
-      <Text>
-        I will soon be moving to Barcelona after living in Stockholm, Sweden for the past four years.
-        I’m looking for a fresh new challenge at a company that champions their team spirit as much as their product.​
-        <br />
-        I enjoy working with other crafts, collaborating daily with UI/UX, QA and backend developers.
-        <br />
-        I’m always open to feedback and new ideas and can handle stress very well. I am organised,
-        make quick decisions and I can lead a group when I need to.
-      </Text>
     </Inner>
   </Container>
 );

@@ -1,5 +1,6 @@
 export {default as csharp} from './csharp-original.svg';
 export {default as css} from './css3-original.svg';
+export {default as download} from './download.svg';
 export {default as git} from './git-original.svg';
 export {default as github} from './github-original.svg';
 export {default as graphql} from './graphql.svg';
