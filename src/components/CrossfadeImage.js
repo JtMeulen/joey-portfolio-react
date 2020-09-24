@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 
-// TODO refactoringnngg
 export default class CrossfadeImage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      topSrc: props.src,
-      bottomOpacity: 0,
-      bottomSrc: props.src
-    };
-  }
+
+  state = {
+    topSrc: this.props.src,
+    bottomOpacity: 0,
+    bottomSrc: this.props.src
+  };
 
   componentWillReceiveProps(newProps) {
     const oldSrc = this.state.topSrc;
