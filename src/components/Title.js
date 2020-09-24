@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export default (props) => (
+  <Container>
+    <Text>{props.children}</Text>
+    <Divider />
+  </Container>
+);
+
 const Container = styled.div`
   width: 100%;
   padding: 30px 0;
@@ -25,10 +32,3 @@ const Divider = styled.div`
   margin-top: 12px;
   background-color: white;
 `;
-
-export default (props) => (
-  <Container>
-    <Text>{props.children}</Text>
-    <Divider />
-  </Container>
-);

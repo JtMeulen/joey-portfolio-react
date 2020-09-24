@@ -2,6 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 import { github, linkedin, download } from '../icons';
 
+export default () => (
+  <Container>
+    <Inner>
+      <Text>
+        <strong>Birthdate: </strong>16/02/1989
+      </Text>
+      <Text>
+        <strong>Phone: </strong>0046 72 0101 196
+      </Text>
+      <Text>
+        <strong>Email: </strong>joeytermeulen@gmail.com
+      </Text>
+      <Text>
+        <strong>Location: </strong>Barcelona, Spain
+      </Text>
+      <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
+        <img src={linkedin} alt={"linkedin"}/>
+      </IconLink>
+      <IconLink href={"https://github.com/JtMeulen"} target={"_blank"} rel={"nofollow"}>
+        <img src={github} alt={"github"}/>
+      </IconLink>
+      <IconLink href={"/files/cv.pdf"} download="cv_joey_ter_meulen.pdf" >
+        <img src={download} alt={"cv"}/>
+      </IconLink>
+    </Inner>
+  </Container>
+);
+
 const Container = styled.div`
   width: 50%;
   background-color: #3eafab;
@@ -28,6 +56,7 @@ const Text = styled.p`
 
 const IconLink = styled.a`
   margin-right: 10px;
+  line-height: 80px;
   font-size: 40px;
   opacity: 1;
   transition: opacity .2s linear;
@@ -41,32 +70,4 @@ const IconLink = styled.a`
     opacity: .8;
     color: lightgrey;
   }
-`
-
-export default () => (
-  <Container>
-    <Inner>
-      <Text>
-        <strong>Birthdate: </strong>16/02/1989
-      </Text>
-      <Text>
-        <strong>Phone: </strong>0046 72 0101 196
-      </Text>
-      <Text>
-        <strong>Email: </strong>joeytermeulen@gmail.com
-      </Text>
-      <Text>
-        <strong>Location: </strong>Barcelona
-      </Text>
-      <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
-        <img src={linkedin} alt={"linkedin"}/>
-      </IconLink>
-      <IconLink href={"https://github.com/JtMeulen"} target={"_blank"} rel={"nofollow"}>
-        <img src={github} alt={"github"}/>
-      </IconLink>
-      <IconLink href={"/files/cv.pdf"} download="cv_joey_ter_meulen.pdf" >
-        <img src={download} alt={"cv"}/>
-      </IconLink>
-    </Inner>
-  </Container>
-);
+`;

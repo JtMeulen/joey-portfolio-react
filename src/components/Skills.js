@@ -18,6 +18,26 @@ const GRID_ITEMS = [
   {name: 'C#', icon: csharp}
 ];
 
+const renderGridItems = () => {
+  return GRID_ITEMS.map((i) => {
+    return (
+      <GridItem key={i.name}>
+        <img src={i.icon} alt={i.name} />
+        <span>{i.name}</span>
+      </GridItem>
+    );
+  })
+}
+
+export default () => (
+  <Container>
+    <Title>Tech Stack</Title>
+    <Grid>
+      {renderGridItems()}
+    </Grid>
+  </Container>
+);
+
 const Container = styled.div`
   width: 100%;
 `;
@@ -45,23 +65,3 @@ const GridItem = styled.div`
     font-size: 16px;
   }
 `;
-
-const renderGridItems = () => {
-  return GRID_ITEMS.map((i) => {
-    return (
-      <GridItem key={i.name}>
-        <img src={i.icon} alt={i.name} />
-        <span>{i.name}</span>
-      </GridItem>
-    );
-  })
-}
-
-export default () => (
-  <Container>
-    <Title>Tech Stack</Title>
-    <Grid>
-      {renderGridItems()}
-    </Grid>
-  </Container>
-);

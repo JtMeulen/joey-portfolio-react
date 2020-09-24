@@ -1,14 +1,7 @@
 import React, { Fragment } from 'react';
-import Slider from 'infinite-react-carousel';
 import styled from 'styled-components';
 
-import { Project, Title } from '../components';
-import { PAGE_DETAILS } from '../constants';
-
-const Container = styled.div`
-  width: 100%;
-  height: 500px;
-`;
+import { Title } from '../components';
 
 export default () => (
   <Fragment>
@@ -20,3 +13,8 @@ export default () => (
     <p>Games will come hereererere</p>
   </Fragment>
 );
+
+const Container = styled.div`
+  width: 100%;
+  height: 500px;
+`;

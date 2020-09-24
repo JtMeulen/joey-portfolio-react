@@ -3,6 +3,13 @@ import styled from 'styled-components';
 
 import { AboutDescription, AboutContact } from '../components';
 
+export default () => (
+  <Container>
+    <AboutDescription />
+    <AboutContact />
+  </Container>
+);
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -12,10 +19,3 @@ const Container = styled.div`
     flex-flow: column;
   }
 `;
-
-export default () => (
-  <Container>
-    <AboutDescription />
-    <AboutContact />
-  </Container>
-);

@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export default () => (
+  <Container>
+    <ColorOverlay />
+    <Text size={60} weight={600}>Joey ter Meulen</Text>
+    <Text size={16} weight={400}>Frontend Web Developer</Text>
+  </Container>
+);
+
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -29,11 +37,3 @@ const Text = styled.span`
   text-align: center;
   text-transform: uppercase;
 `;
-
-export default () => (
-  <Container>
-    <ColorOverlay />
-    <Text size={60} weight={600}>Joey ter Meulen</Text>
-    <Text size={16} weight={400}>Frontend Web Developer</Text>
-  </Container>
-);

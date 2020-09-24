@@ -1,40 +1,86 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+
+export default (props) => {
+  const [idx, setIdx] = useState(0);
+  const totalImages = props.project.thumbnails.length;
+  let timeout;
+
+  const changeIdx = () => {
+    clearTimeout(timeout);
+    setIdx(idx + 1 === totalImages ? 0 : idx + 1);
+  };
+
+  useEffect(() => {
+    timeout = setTimeout(() => {
+      changeIdx();
+    }, 3000);
+  }, [idx]);
+
+  return (
+    <Container>
+      <ProjectDetails >
+        <p>{props.project.name}</p>
+        <p>{props.project.description}</p>
+        <p>{props.project.description2}</p>
+        <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
+      </ProjectDetails>
+      <ImageContainer image={props.project.thumbnail}>
+        <img src={props.project.thumbnails[idx]} onClick={changeIdx} />
+      </ImageContainer>
+    </Container>
+  )
+};
 
 const Container = styled.div`
   width: 100%;
-  height: 600px;
   display: flex;
-  /* background-color: ${props => props.color}; */
 
   @media (max-width: 768px) {
     flex-flow: column;
-    height: 300px;
   }
 `;
 
 const ProjectDetails = styled.div`
-  flex-grow: 2;
-  height: 100%;
-  /* background-color: rgba(255,255,255,0.2); */
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  padding: 60px;
+
+  & p:first-of-type {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 50px 10px;
+    width: 100%;
+  }
 `;
 
-const Image = styled.div`
-  flex-grow: 4;
-  height: 100%;
-  background-image: url(${props => props.image});
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+const ImageContainer = styled.div`
+  width: 60%;
+  box-sizing: border-box;
+  padding: 60px;
+
+  & img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 50px;
+    width: 100%;
+  }
 `;
 
+const Link = styled.a`
+  color: #4ac2be;
 
-export default (props) => (
-  <Container color={props.project.background_color}>
-    <ProjectDetails >
-      <p>{props.project.name}</p>
-      <a href={props.project.url} target={"_blank"}>See the project</a>
-    </ProjectDetails>
-    <Image image={props.project.thumbnail} />
-  </Container>
-);
+  &:visited, :hover, :active {
+    color: #3eafab;
+  }
+`;

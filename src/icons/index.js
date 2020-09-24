@@ -1,3 +1,5 @@
+export {default as arrowleft} from './arrow-left.svg';
+export {default as arrowright} from './arrow-right.svg';
 export {default as csharp} from './csharp-original.svg';
 export {default as css} from './css3-original.svg';
 export {default as download} from './download.svg';
