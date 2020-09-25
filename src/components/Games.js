@@ -5,16 +5,20 @@ import { Title } from '../components';
 
 export default () => (
   <Fragment>
-    <Title>Games Portfolio</Title>
-    <p>Games will come hereererere</p>
-    <p>Games will come hereererere</p>
-    <p>Games will come hereererere</p>
-    <p>Games will come hereererere</p>
-    <p>Games will come hereererere</p>
+    <Title>Game Portfolio</Title>
+    <Text>
+      As a hobby I am also creating games while experimenting with different engines. I have tried using Python with Pygame, Unreal Engine, Phaser (javascript) and Unity.
+      Using Unity is a lot of fun, and writing in C# is an exciting challenge that keeps me going!
+    </Text>
+
   </Fragment>
 );
 
-const Container = styled.div`
+const Text = styled.p`
   width: 100%;
-  height: 500px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
 `;

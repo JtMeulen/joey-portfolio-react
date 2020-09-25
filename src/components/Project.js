@@ -22,6 +22,7 @@ export default (props) => {
     <Container>
       <ProjectDetails >
         <p>{props.project.name}</p>
+        <p>{props.project.subtitle}</p>
         <p>{props.project.description}</p>
         <p>{props.project.description2}</p>
         <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
@@ -55,6 +56,11 @@ const ProjectDetails = styled.div`
     font-weight: 700;
   }
 
+  & p:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
   @media (max-width: 768px) {
     padding: 20px 50px 10px;
     width: 100%;
@@ -69,7 +75,6 @@ const ImageContainer = styled.div`
   & img {
     width: 100%;
     border-radius: 20px;
-    cursor: pointer;
   }
 
   @media (max-width: 768px) {
