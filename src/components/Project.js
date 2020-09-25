@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import CrossfadeImage from './CrossfadeImage';
+import { CrossfadeImage } from '../components';
 
 export default (props) => {
   const [idx, setIdx] = useState(0);
