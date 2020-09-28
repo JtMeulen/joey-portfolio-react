@@ -28,7 +28,8 @@ export default (props) => {
         <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
       </ProjectDetails>
       <ImageContainer image={props.project.thumbnail}>
-        <CrossfadeImage src={props.project.thumbnails[idx]} />
+        {/* <CrossfadeImage src={props.project.thumbnails[idx]} /> */}
+        <img src={props.project.thumbnails[0]} />
       </ImageContainer>
     </Container>
   )
@@ -75,6 +76,7 @@ const ImageContainer = styled.div`
   & img {
     width: 100%;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
   }
 
   @media (max-width: 768px) {

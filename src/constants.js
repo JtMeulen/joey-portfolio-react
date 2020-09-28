@@ -2,8 +2,7 @@ const LEOVEGAS = {
   name: 'LeoVegas',
   subtitle: 'Online Casino Gaming',
   thumbnails: [
-    '/assets/thumbnails/leovegas_thumb.png',
-    '/assets/thumbnails/sandradcm_thumb.png'
+    '/assets/thumbnails/leovegas1_thumb.png'
   ],
   url: 'https://leovegas.com',
   description:
@@ -25,7 +24,7 @@ const SANDRADCM = {
   name: 'SandraDCM',
   subtitle: 'Game Artist Portfolio',
   thumbnails: [
-    '/assets/thumbnails/sandradcm_thumb.png'
+    '/assets/thumbnails/sandradcm2_thumb.png'
   ],
   url: 'https://sandradcm.com',
   description:
