@@ -18,12 +18,12 @@ export default () => {
       <Slider
         dots
         duration={70}
-        prevArrow={<img src={arrowleft} style={{'-webkit-tap-highlight-color': 'transparent' }} />}
-        nextArrow={<img src={arrowright} style={{'-webkit-tap-highlight-color': 'transparent' }} /> }
+        prevArrow={<img src={arrowleft} alt={''} style={{'-webkit-tap-highlight-color': 'transparent' }} />}
+        nextArrow={<img src={arrowright}  alt={''} style={{'-webkit-tap-highlight-color': 'transparent' }} /> }
         afterChange={handleSlide}
       >
         {PAGE_DETAILS.map((project, index) => {
-          return <Project project={project} slideNo={index} currSlide={currSlide}/>;
+          return <Project key={project.name} project={project} slideNo={index} currSlide={currSlide}/>;
         })}
       </Slider>
     </Fragment>

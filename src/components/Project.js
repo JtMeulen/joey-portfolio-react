@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { CrossfadeImage } from '../components';
+// import { CrossfadeImage } from '../components';
 
 export default (props) => {
   const [idx, setIdx] = useState(0);
@@ -11,7 +11,7 @@ export default (props) => {
   };
 
   useEffect(() => {
-    if(props.currSlide == props.slideNo) {
+    if(props.currSlide === props.slideNo) {
       setTimeout(() => {
         changeIdx();
       }, 4000);
@@ -28,8 +28,8 @@ export default (props) => {
         <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
       </ProjectDetails>
       <ImageContainer image={props.project.thumbnail}>
-        {/* <CrossfadeImage src={props.project.thumbnails[idx]} /> */}
-        <img src={props.project.thumbnails[0]} />
+        {/* <CrossfadeImage src={props.project.thumbnails[idx]} alt={props.project.name}/> */}
+        <img src={props.project.thumbnails[0]} alt={`${props.project.name} - thumbnail`}/>
       </ImageContainer>
     </Container>
   )

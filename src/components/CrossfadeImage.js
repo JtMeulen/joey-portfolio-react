@@ -39,6 +39,7 @@ export default class CrossfadeImage extends Component {
         {topSrc &&
           <img
             style={{ position: "absolute" }}
+            alt={''}
             src={topSrc}
           />}
         {bottomSrc &&
@@ -47,6 +48,7 @@ export default class CrossfadeImage extends Component {
               opacity: bottomOpacity,
               transition: 'opacity .5s ease'
             }}
+            alt={''}
             src={bottomSrc}
           />}
       </div>
