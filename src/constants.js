@@ -2,7 +2,7 @@ const LEOVEGAS = {
   name: 'LeoVegas',
   subtitle: 'Online Casino Gaming',
   thumbnails: [
-    '/assets/thumbnails/leovegas1_thumb.png'
+    'https://i.imgur.com/n4AuEOI.png'
   ],
   url: 'https://leovegas.com',
   description:
@@ -24,7 +24,7 @@ const SANDRADCM = {
   name: 'SandraDCM',
   subtitle: 'Game Artist Portfolio',
   thumbnails: [
-    '/assets/thumbnails/sandradcm2_thumb.png'
+    'https://i.imgur.com/BeoVXnD.png'
   ],
   url: 'https://sandradcm.com',
   description:
@@ -43,8 +43,7 @@ const JSORGANISER = {
   name: 'J&S Organiser',
   subtitle: 'Todo List / Organiser',
   thumbnails: [
-    '/assets/thumbnails/jsorganiser1_thumb.png',
-    '/assets/thumbnails/jsorganiser2_thumb.png'
+    'https://i.imgur.com/MIBikm1.png'
   ],
   url: 'https://jsorganiser.herokuapp.com/',
   description:
@@ -65,7 +64,7 @@ const BURGERBUILDER = {
   name: 'Burger Builder',
   subtitle: 'React Burger Builder',
   thumbnails: [
-    '/assets/thumbnails/burgerbuilder_thumb.png'
+    'https://i.imgur.com/YUHMuQS.png'
   ],
   url: 'https://react-burger-builder-90758.firebaseapp.com/',
   description:
@@ -84,7 +83,7 @@ const ICONSTRUCT = {
   name: 'iConstruct',
   subtitle: 'Company Portfolio',
   thumbnails: [
-    '/assets/thumbnails/iconstruct_thumb.png'
+    'https://i.imgur.com/3HC0Mck.png'
   ],
   url: 'https://iconstructnl.herokuapp.com/home-en',
   description:
@@ -102,7 +101,7 @@ const UPNEXT = {
   name: 'UpNext',
   subtitle: 'Social Movie Database',
   thumbnails: [
-    '/assets/thumbnails/upnext_thumb.png'
+    'https://i.imgur.com/3oQLLta.png'
   ],
   url: 'https://upnextmoviedb.herokuapp.com/index',
   description:

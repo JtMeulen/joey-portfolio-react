@@ -17,7 +17,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 520px;
-  background-image: url('/assets/images/header_bg.jpg');
+  background-image: url('https://i.imgur.com/hDfLYWj.jpg');
   background-size: cover;
   background-position: top center;
 `;

@@ -11,10 +11,10 @@ export default () =>  (
       Using Unity is a lot of fun, and writing in C# is an exciting challenge that keeps me going!
     </Text>
     <GameGrid>
-      <GifPreview name={'helda'} />
-      <GifPreview name={'platform'} />
-      <GifPreview name={'defender'} />
-      <GifPreview name={'football'} />
+      <GifPreview id={'helda'} img={'https://i.imgur.com/DJe58pf.png'} gif={'https://i.imgur.com/6Pczf3A.gif'} />
+      <GifPreview id={'platform'} img={'https://i.imgur.com/e5UrwFG.png'} gif={'https://i.imgur.com/B06JRTt.gif'}/>
+      <GifPreview id={'defender'} img={'https://i.imgur.com/AnXteVr.png'} gif={'https://i.imgur.com/2ITxEV3.gif'}/>
+      <GifPreview id={'football'} img={'https://i.imgur.com/wOmrAFZ.png'} gif={'https://i.imgur.com/FLvKeTu.gif'}/>
     </GameGrid>
   </Fragment>
 );

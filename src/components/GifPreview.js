@@ -14,7 +14,7 @@ export default (props) => {
 
   return (
     <Container>
-      <Image onMouseEnter={showGif} onMouseOut={hideGif} src={`/assets/games/${props.name}.${gif ? 'gif' : 'png'}`}/>
+      <Image onMouseEnter={showGif} onMouseOut={hideGif} src={`${gif ? props.gif : props.img}`}/>
     </Container>
   )
 };
