@@ -21,7 +21,6 @@ const Text = styled.p`
   margin: 0;
   color: white;
   text-transform: uppercase;
-  font-weight: 500;
   font-size: 24px;
   text-align: center;
 `;

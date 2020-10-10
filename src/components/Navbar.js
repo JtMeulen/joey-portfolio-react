@@ -38,10 +38,12 @@ const Container = styled.div`
   height: 60px;
   width: 100%;
   background-color: rgba(52,52,52,0.7);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
 
   & a {
-    margin: 0 4px;
-    line-height: 60px;
+    margin: 0 12px;
     cursor: pointer;
     transition: color linear .1s;
     color: white;
@@ -49,5 +51,11 @@ const Container = styled.div`
 
   & a.active, a:hover {
     color: #3eafab;
+  }
+
+  @media (max-width: 768px) {
+    & a {
+      font-size: 16px;
+    }
   }
 `;

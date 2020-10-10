@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export default () => (
   <Container>
     <ColorOverlay />
-    <Text size={60} weight={600}>Joey ter Meulen</Text>
-    <Text size={16} weight={400}>Frontend Web Developer</Text>
+    <Text size={60} weight={700}>Joey ter Meulen</Text>
+    <Text size={24} weight={300}>Frontend Web Developer</Text>
   </Container>
 );
 

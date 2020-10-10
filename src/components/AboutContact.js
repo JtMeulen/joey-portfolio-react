@@ -6,16 +6,16 @@ export default () => (
   <Container>
     <Inner>
       <Text>
-        <strong>Date of birth: </strong>16/02/1989
+        Date of birth: 16/02/1989
       </Text>
       <Text>
-        <strong>Phone: </strong>0046 72 0101 196
+        Phone: 0046 72 0101 196
       </Text>
       <Text>
-        <strong>Email: </strong>joeytermeulen@gmail.com
+        Email: joeytermeulen@gmail.com
       </Text>
       <Text>
-        <strong>Location: </strong>Barcelona, Spain
+        Location: Barcelona, Spain
       </Text>
       <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
         <img src={linkedin} alt={"linkedin"}/>
