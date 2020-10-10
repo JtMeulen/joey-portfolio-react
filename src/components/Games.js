@@ -7,8 +7,8 @@ export default () =>  (
   <Fragment>
     <Title>Game Portfolio</Title>
     <Text>
-      As a hobby I am also creating games while experimenting with different engines. I have tried using Python with Pygame, Unreal Engine, Phaser (javascript) and Unity.
-      Using Unity is a lot of fun, and writing in C# is an exciting challenge that keeps me going!
+      In my spare time, I like to develop games and experiment with different engines. I have used Python with Pygame, Unreal Engine, Phaser (javascript) and Unity.
+      I especially enjoy working with Unity and writing C#.
     </Text>
     <GameGrid>
       <GifPreview id={'helda'} img={'https://i.imgur.com/DJe58pf.png'} gif={'https://i.imgur.com/6Pczf3A.gif'} />
@@ -24,7 +24,7 @@ const Text = styled.p`
   text-align: center;
   box-sizing: border-box;
   padding: 20px;
-  margin: 0 auto;
+  margin: 60px auto 0;
   max-width: 800px;
 `;
 

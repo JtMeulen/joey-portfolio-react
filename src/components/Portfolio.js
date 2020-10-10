@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
 import { arrowleft, arrowright } from '../icons';
 
@@ -15,17 +16,42 @@ export default () => {
   return (
     <Fragment>
       <Title>Web Portfolio</Title>
-      <Slider
-        dots
-        duration={70}
-        prevArrow={<img src={arrowleft} alt={''} style={{'-webkit-tap-highlight-color': 'transparent' }} />}
-        nextArrow={<img src={arrowright}  alt={''} style={{'-webkit-tap-highlight-color': 'transparent' }} /> }
-        afterChange={handleSlide}
-      >
-        {PAGE_DETAILS.map((project, index) => {
-          return <Project key={project.name} project={project} slideNo={index} currSlide={currSlide}/>;
-        })}
-      </Slider>
+      <Container>
+        <Slider
+          dots
+          duration={70}
+          prevArrow={<Arrow src={arrowleft} alt={''}  />}
+          nextArrow={<Arrow src={arrowright}  alt={''} /> }
+          afterChange={handleSlide}
+        >
+          {PAGE_DETAILS.map((project, index) => {
+            return <Project key={project.name} project={project} slideNo={index} currSlide={currSlide}/>;
+          })}
+        </Slider>
+      </Container>
     </Fragment>
   );
 }
+
+const Container = styled.div`
+  padding: 40px 40px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  /* this is targeting the inner styling of the carousel */
+  & div div {
+    overflow: visible;
+  }
+`;
+
+const Arrow = styled.img`
+  -webkit-tap-highlight-color: transparent;
+  width: 60px;
+
+  @media (max-width: 768px) {
+    width: 40px;
+  }
+`;

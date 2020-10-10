@@ -5,10 +5,10 @@ export default () => (
   <Container>
     <Inner>
       <Text>
-        Hello! I am Joey, a 31-year-old frontend web developer from Amsterdam, the Netherlands.
-        In 2017 I discovered coding and after extensive home studies, I officially joined the development industry
-        at the start of 2018. I have since been professionally developing websites, focusing on R​eact.js, Node.js and GraphQl​.
-        <br />
+        Hello! I am Joey, a 31-year-old frontend web developer from Amsterdam, the Netherlands.<br /><br />
+        After having coded at home as a hobby for a while, I officially joined the development industry
+        at the start of 2018. I have since been developing websites professionally, focusing on R​eact.js, Node.js and GraphQl​.
+        <br /><br />
         With 3 years of working experience, React.js is my main strength - but in my spare time, Unity and C# take over.
         Coding games is just as fun!
       </Text>

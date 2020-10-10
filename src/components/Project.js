@@ -25,7 +25,8 @@ export default (props) => {
         <p>{props.project.subtitle}</p>
         <p>{props.project.description}</p>
         <p>{props.project.description2}</p>
-        <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>See the project</Link>
+        <p>{props.project.description3}</p>
+        <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>Visit the website</Link>
       </ProjectDetails>
       <ImageContainer image={props.project.thumbnail}>
         {/* <CrossfadeImage src={props.project.thumbnails[idx]} alt={props.project.name}/> */}
@@ -37,10 +38,13 @@ export default (props) => {
 
 const Container = styled.div`
   width: 100%;
+  box-sizing: border-box;
   display: flex;
+  padding: 0 40px;
 
   @media (max-width: 768px) {
     flex-flow: column;
+    padding: 0;
   }
 `;
 

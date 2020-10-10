@@ -6,7 +6,7 @@ export default () => (
   <Container>
     <Inner>
       <Text>
-        <strong>Birthdate: </strong>16/02/1989
+        <strong>Date of birth: </strong>16/02/1989
       </Text>
       <Text>
         <strong>Phone: </strong>0046 72 0101 196
@@ -36,6 +36,8 @@ const Container = styled.div`
   color: white;
   box-sizing: border-box;
   padding: 60px;
+  display:flex;
+  align-items: center;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -44,7 +46,6 @@ const Container = styled.div`
 
 const Inner = styled.div`
   max-width: 500px;
-
   @media (max-width: 768px) {
     max-width: 100%;
   }
