@@ -91,8 +91,5 @@ const ImageContainer = styled.div`
 
 const Link = styled.a`
   color: #88af3e;
-
-  &:visited, :hover, :active {
-    color: #88af3e;
-  }
+  font-weight: 600;
 `;
