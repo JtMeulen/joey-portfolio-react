@@ -18,7 +18,7 @@ export default () => (
 
 const Container = styled.div`
   width: 50%;
-  background-color: #4ac2be;
+  background-color: #585858;
   color: white;
   box-sizing: border-box;
   padding: 60px;

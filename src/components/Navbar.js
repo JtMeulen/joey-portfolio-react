@@ -50,7 +50,7 @@ const Container = styled.div`
   }
 
   & a.active, a:hover {
-    color: #3eafab;
+    color: #88af3e;
   }
 
   @media (max-width: 768px) {

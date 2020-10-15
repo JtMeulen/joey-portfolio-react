@@ -32,7 +32,7 @@ export default () => (
 
 const Container = styled.div`
   width: 50%;
-  background-color: #3eafab;
+  background-color: #868686;
   color: white;
   box-sizing: border-box;
   padding: 60px;

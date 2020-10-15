@@ -17,9 +17,9 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 520px;
-  background-image: url('https://i.imgur.com/hDfLYWj.jpg');
+  background-image: url('https://i.imgur.com/ii9kiKG.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 `;
 
 const ColorOverlay = styled.div`
