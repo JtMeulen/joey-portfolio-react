@@ -9,7 +9,7 @@ export default () => (
         Date of birth: 16/02/1989
       </Text>
       <Text>
-        Phone: 0046 72 0101 196
+        Phone: 0034 679 308 440
       </Text>
       <Text>
         Email: joeytermeulen@gmail.com

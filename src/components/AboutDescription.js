@@ -1,11 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const getMyAge = () => {
+  const today = new Date();
+  const birthDate = new Date('1989-02-16');
+  const m = today.getMonth() - birthDate.getMonth();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
 export default () => (
   <Container>
     <Inner>
       <Text>
-        Hello! I am Joey, a 31-year-old frontend web developer from Amsterdam, the Netherlands.<br /><br />
+        Hello! I am Joey, a {getMyAge()}-year-old frontend web developer from Amsterdam, the Netherlands.<br /><br />
         After having coded at home as a hobby for a while, I officially joined the development industry
         at the start of 2018. I have since been developing websites professionally, focusing on R​eact.js, Node.js and GraphQl​.
         <br /><br />

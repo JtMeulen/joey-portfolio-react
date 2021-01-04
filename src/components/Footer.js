@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default () => (
   <Container>
-    <p>Joey ter Meulen, 2020</p>
+    <p>Joey ter Meulen, {new Date().getFullYear()}</p>
   </Container>
 );
 
