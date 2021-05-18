@@ -1,3 +1,21 @@
+const ZEELO = {
+  name: 'Zeelo (2021)',
+  subtitle: 'Bus Sharing Platform',
+  thumbnails: [
+    'https://i.imgur.com/jXvrF4B.png'
+  ],
+  url: 'https://zeelo.co',
+  description:
+  `
+  Zeelo is a bus sharing service that functions as an inhouse operating platform aswell as a SaaS platform.
+  `,
+  description2:
+  `
+  My main focus while working here has been on improving and adding new features to the internal tools and associated control systems.
+  The project was build with React while using Styled Components to build a nice UI library which was powered by Storybook.
+  `
+};
+
 const LEOVEGAS = {
   name: 'LeoVegas (2018-2020)',
   subtitle: 'Online Casino Gaming',
@@ -12,7 +30,7 @@ const LEOVEGAS = {
   `,
   description2:
   `
-  A few features I developed and take great pride in are Tournaments, Onsite surveys and Multiplay (an industry first). These are just a few examples; 
+  A few features I developed and take great pride in are Tournaments, Onsite surveys and Multiplay (an industry first). These are just a few examples;
   working on such a large scale project, cross collaborating between many teams, has shown me all corners of web development.
   `,
   description3:
@@ -31,13 +49,11 @@ const SANDRADCM = {
   url: 'https://sandradcm.com',
   description:
   `
-  Working together with your partner is always fun - especially if she is a game
-  artist with a great eye for detail and design!
+  I tried my hand at a more colorful website, working with a game-artist to show her body of work in an online portfolio.
   `,
   description2:
   `
-  Her portfolio needed to reflect artistic skill, document her past projects and look professional, yet playful.
-  SandraDCM.com uses many little quirks to achieve this, like an animating parallax header and sliding elements.
+  SandraDCM.com uses many little quirks to achieve her preferred playful style, like an animating parallax header and sliding elements.
   `
   ,
   description3:
@@ -123,7 +139,7 @@ const UPNEXT = {
   description:
   `
   Watching movies with friends is always fun - if you can agree on what to watch! UpNext was one of my first projects to use with friends.
-  Everyone can create personalized lists of their favorite or yet-to-see movies and share those with friends. The movies come from OMDB, the free movie database api. 
+  Everyone can create personalized lists of their favorite or yet-to-see movies and share those with friends. The movies come from OMDB, the free movie database api.
   `,
   description2:
   `
@@ -133,6 +149,7 @@ const UPNEXT = {
 };
 
 export const PAGE_DETAILS = [
+  ZEELO,
   LEOVEGAS,
   SANDRADCM,
   JSORGANISER,
