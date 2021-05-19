@@ -15,7 +15,7 @@ export default () => (
         Email: joeytermeulen@gmail.com
       </Text>
       <Text>
-        Location: Barcelona, Spain
+        Location: Heerhugowaard, the Netherlands
       </Text>
       <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
         <img src={linkedin} alt={"linkedin"}/>
