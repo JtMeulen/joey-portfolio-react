@@ -1,3 +1,23 @@
+const CODEZILLA = {
+  name: 'CODEZILLA (2021)',
+  subtitle: 'Frontend Consultancy',
+  thumbnails: [
+    'https://i.imgur.com/XmjyC99.png'
+  ],
+  url: 'https://www.codezilla.nl/',
+  description:
+  `
+  Through CODEZILLA, I started working for the Rabobank as a frontend developer for a team that builds the UI library.
+  `,
+  description2:
+  `
+  With this team I got introduced to working with web-components while using StencilJS. The components are used by hundreds of developers across multiple
+  different apps and sites of the Rabobank. Some extra tasks are providing support for the users, making sure everything works across different frameworks,
+  and maintaining pipelines in Azure.
+  `
+};
+
+
 const ZEELO = {
   name: 'Zeelo (2021)',
   subtitle: 'Bus Sharing Platform',
@@ -149,6 +169,7 @@ const UPNEXT = {
 };
 
 export const PAGE_DETAILS = [
+  CODEZILLA,
   ZEELO,
   LEOVEGAS,
   SANDRADCM,
