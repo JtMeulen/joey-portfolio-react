@@ -1,13 +1,13 @@
 const CODEZILLA = {
-  name: 'CODEZILLA (2021)',
-  subtitle: 'Frontend Consultancy',
+  name: 'Rabobank (2021)',
+  subtitle: 'Design System Engineer',
   thumbnails: [
     'https://i.imgur.com/XmjyC99.png'
   ],
-  url: 'https://www.codezilla.nl/',
+  url: 'https://www.rabobank.nl/',
   description:
   `
-  Through CODEZILLA, I started working for the Rabobank as a frontend developer for a team that builds the UI library.
+  Through ioDigital (consultancy), I started working for the Rabobank as a frontend developer for a team that builds the bank's design system.
   `,
   description2:
   `

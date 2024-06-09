@@ -5,14 +5,16 @@ import { git, javascript,react, redux, nodejs, css, html, csharp, jquery, mongod
 
 const GRID_ITEMS = [
   {name: 'JavaScript', icon: javascript},
+  // {name: 'StencilJs', icon: stencil},
+  // {name: 'Lit', icon: lit},
   {name: 'React', icon: react},
   {name: 'Redux', icon: redux},
   {name: 'NodeJs', icon: nodejs},
   {name: 'GraphQL', icon: graphql},
-  {name: 'jQuery', icon: jquery},
   {name: 'MongoDB', icon: mongodb},
   {name: 'CSS3', icon: css},
   {name: 'HTML5', icon: html},
+  {name: 'jQuery', icon: jquery},
   {name: 'Git/Github', icon: git},
   {name: 'Unity', icon: unity},
   {name: 'C#', icon: csharp}

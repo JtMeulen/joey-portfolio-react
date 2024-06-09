@@ -10,20 +10,23 @@ export default () => (
       smooth={true}
       duration={800}
       activeClass={'active'}
-    >ABOUT</Scroll.Link>
+      tabIndex={1}
+      >ABOUT</Scroll.Link>
     <Scroll.Link
       to={"skills"}
       spy={true}
       smooth={true}
       duration={800}
       activeClass={'active'}
-    >SKILLS</Scroll.Link>
+      tabIndex={1}
+      >SKILLS</Scroll.Link>
     <Scroll.Link
       to={"portfolio"}
       spy={true}
       smooth={true}
       duration={800}
       activeClass={'active'}
+      tabIndex={1}
     >PORTFOLIO</Scroll.Link>
   </Container>
 );

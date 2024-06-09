@@ -4,7 +4,6 @@ export {default as Navbar} from './Navbar.js';
 export {default as About} from './About.js';
 export {default as Skills} from './Skills.js';
 export {default as Portfolio} from './Portfolio.js';
-export {default as Games} from './Games.js';
 export {default as Footer} from './Footer.js';
 
 // Helper components
@@ -12,5 +11,3 @@ export {default as AboutDescription} from './AboutDescription.js';
 export {default as AboutContact} from './AboutContact.js';
 export {default as Project} from './Project.js';
 export {default as Title} from './Title.js';
-export {default as GifPreview} from './GifPreview.js';
-export {default as CrossfadeImage} from './CrossfadeImage.js';

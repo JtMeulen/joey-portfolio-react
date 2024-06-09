@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { github, linkedin, download } from '../icons';
+import { github, linkedin } from '../icons';
 
 export default () => (
   <Container>
@@ -9,22 +9,16 @@ export default () => (
         Date of birth: 16/02/1989
       </Text>
       <Text>
-        Phone: 06 271 304 15
-      </Text>
-      <Text>
         Email: joeytermeulen@gmail.com
       </Text>
       <Text>
-        Location: Amstelveen, the Netherlands
+        Location: Barcelona, Spain
       </Text>
       <IconLink href={"https://linkedin.com/in/joey-ter-meulen-205365120"} target={"_blank"} rel={"nofollow"}>
         <img src={linkedin} alt={"linkedin"}/>
       </IconLink>
       <IconLink href={"https://github.com/JtMeulen"} target={"_blank"} rel={"nofollow"}>
         <img src={github} alt={"github"}/>
-      </IconLink>
-      <IconLink href={"/files/cv.pdf"} download="cv_joey_ter_meulen.pdf" >
-        <img src={download} alt={"cv"}/>
       </IconLink>
     </Inner>
   </Container>
