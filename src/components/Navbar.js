@@ -1,37 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import Scroll from 'react-scroll';
 
 export default () => (
   <Container>
-    <Scroll.Link
-      to={"about"}
-      spy={true}
-      smooth={true}
-      duration={800}
-      activeClass={'active'}
-      tabIndex={1}
-      >ABOUT</Scroll.Link>
-    <Scroll.Link
-      to={"skills"}
-      spy={true}
-      smooth={true}
-      duration={800}
-      activeClass={'active'}
-      tabIndex={1}
-      >SKILLS</Scroll.Link>
-    <Scroll.Link
-      to={"portfolio"}
-      spy={true}
-      smooth={true}
-      duration={800}
-      activeClass={'active'}
-      tabIndex={1}
-    >PORTFOLIO</Scroll.Link>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#portfolio">PORTFOLIO</a>
   </Container>
 );
 
-const Container = styled.div`
+const Container = styled.nav`
   position: sticky;
   display: flex;
   z-index: 20;
@@ -49,7 +27,8 @@ const Container = styled.div`
     margin: 0 12px;
     cursor: pointer;
     transition: color linear .1s;
-    color: white;
+    color: var(--color-text-invert);
+    text-decoration: none;
   }
 
   & a.active, a:hover {

@@ -10,8 +10,8 @@ export default () => (
 const Container = styled.div`
   width: 100%;
   height: 100px;
-  color: white;
-  background: #343434;
+  color: var(--color-text-invert);
+  background: var(--color-background-dark);
 
   & p {
     margin-left: 20px;

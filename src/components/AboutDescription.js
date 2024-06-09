@@ -1,45 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const getMyAge = () => {
-  const today = new Date();
-  const birthDate = new Date("1989-02-16");
-  const m = today.getMonth() - birthDate.getMonth();
-  let age = today.getFullYear() - birthDate.getFullYear();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-  return age;
-};
-
-const getWorkingYears = () => {
-  const today = new Date();
-  const startDate = new Date("2018-01-01");
-  const m = today.getMonth() - startDate.getMonth();
-  let years = today.getFullYear() - startDate.getFullYear();
-  if (m < 0 || (m === 0 && today.getDate() < startDate.getDate())) {
-    years--;
-  }
-  return years;
-};
+import { getYearsSince } from "../utils/getYearsSince";
 
 export default () => (
   <Container>
     <Inner>
       <Text>
-        Hello! I am Joey, a {getMyAge()}-year-old frontend web developer from
-        Amsterdam, the Netherlands.
+        Hello! I am Joey, a {getYearsSince("1989-02-16")}-year-old frontend web
+        developer from Amsterdam, the Netherlands.
         <br />
         <br />
         After having coded at home as a hobby for a while, I officially joined
         the development industry at the start of 2018. I have since been
-        developing websites professionally, focusing on R​eact.js, Node.js and
+        developing websites professionally, focusing on ReactJs, Node.js and
         GraphQl​.
         <br />
         <br />
-        With over {getWorkingYears()} years of working experience, my main focus has
-        shifted towards developing design systems using web components. React.js continues to
-        be a significant part of my work.
+        With over {getYearsSince("2018-01-01")} years of working experience, my
+        main focus has shifted towards developing design systems using web
+        components. React.js continues to be a significant part of my work.
       </Text>
     </Inner>
   </Container>
@@ -47,7 +27,7 @@ export default () => (
 const Container = styled.div`
   width: 50%;
   background-color: #585858;
-  color: white;
+  color: var(--color-text-invert);
   box-sizing: border-box;
   padding: 60px;
 

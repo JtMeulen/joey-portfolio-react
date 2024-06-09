@@ -32,7 +32,7 @@ const renderGridItems = () => {
 }
 
 export default () => (
-  <Container>
+  <Container id="skills">
     <Title>Tech Stack</Title>
     <Grid>
       {renderGridItems()}

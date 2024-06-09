@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { AboutDescription, AboutContact } from '../components';
 
 export default () => (
-  <Container>
+  <Container id="about">
     <AboutDescription />
     <AboutContact />
   </Container>

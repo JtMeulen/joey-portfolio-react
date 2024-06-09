@@ -27,7 +27,7 @@ export default () => (
 const Container = styled.div`
   width: 50%;
   background-color: #868686;
-  color: white;
+  color: var(--color-text-invert);
   box-sizing: border-box;
   padding: 60px;
   display:flex;

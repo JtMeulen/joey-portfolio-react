@@ -14,12 +14,12 @@ const Container = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: #343434;
+  background-color: var(--color-background-dark);
 `;
 
 const Text = styled.p`
   margin: 0;
-  color: white;
+  color: var(--color-text-invert);
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
@@ -29,5 +29,5 @@ const Divider = styled.div`
   height: 2px;
   width: 60px;
   margin-top: 12px;
-  background-color: white;
+  background-color: var(--color-text-invert);
 `;

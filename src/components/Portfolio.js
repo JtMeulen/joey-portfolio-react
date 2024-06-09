@@ -14,8 +14,8 @@ export default () => {
   };
 
   return (
-    <Fragment>
-      <Title>Web Portfolio</Title>
+    <div id="portfolio">
+      <Title>Portfolio</Title>
       <Container>
         <Slider
           dots
@@ -29,7 +29,7 @@ export default () => {
           })}
         </Slider>
       </Container>
-    </Fragment>
+    </div>
   );
 }
 

@@ -33,7 +33,7 @@ const Text = styled.span`
   position: relative;
   font-size: ${props => props.size}px;
   font-weight: ${props => props.weight};
-  color: white;
+  color: var(--color-text-invert);
   text-align: center;
   text-transform: uppercase;
 `;
