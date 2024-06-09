@@ -19,10 +19,10 @@ const GlobalStyle = createGlobalStyle`
     background: var(--color-background-light);
     color: var(--color-text);
 
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
       --color-background-light: #585858;
       --color-text: white;
-    }
+    } */
   }
 `;
 
