@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import { CrossfadeImage } from '../components';
 
 export default (props) => {
   const [idx, setIdx] = useState(0);
@@ -26,10 +25,9 @@ export default (props) => {
         <p>{props.project.description}</p>
         <p>{props.project.description2}</p>
         <p>{props.project.description3}</p>
-        <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>Visit the website</Link>
+        {props.project.url && <Link href={props.project.url} target={"_blank"} rel={"nofollow"}>Visit the website</Link>}
       </ProjectDetails>
       <ImageContainer image={props.project.thumbnail}>
-        {/* <CrossfadeImage src={props.project.thumbnails[idx]} alt={props.project.name}/> */}
         <img src={props.project.thumbnails[0]} alt={`${props.project.name} - thumbnail`}/>
       </ImageContainer>
     </Container>

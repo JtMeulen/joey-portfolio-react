@@ -27,7 +27,7 @@ const ZEELO = {
   url: 'https://zeelo.co',
   description:
   `
-  Zeelo is a bus sharing service that functions as an inhouse operating platform aswell as a SaaS platform.
+  Zeelo is a bus sharing service that functions as an inhouse operating platform as well as a SaaS platform.
   `,
   description2:
   `
@@ -88,7 +88,6 @@ const JSORGANISER = {
   thumbnails: [
     'https://i.imgur.com/MIBikm1.png'
   ],
-  url: 'https://jsorganiser.herokuapp.com/',
   description:
   `
   Alright, so every developer creates an app for lists... and I couldn't stay behind! I initially built this webapp as a small checklist for my partner and I to
@@ -112,7 +111,6 @@ const BURGERBUILDER = {
   thumbnails: [
     'https://i.imgur.com/YUHMuQS.png'
   ],
-  url: 'https://react-burger-builder-90758.firebaseapp.com/',
   description:
   `
   My introduction into React, Redux and Firebase came from a great tutorial created by Maximilian Schwarzmüller. After following his tutorials on Node.js,
@@ -136,7 +134,6 @@ const ICONSTRUCT = {
   thumbnails: [
     'https://i.imgur.com/3HC0Mck.png'
   ],
-  url: 'https://iconstructnl.herokuapp.com/home-en',
   description:
   `
   My brother started his own construction company in our home country, the Netherlands - so naturally, I built his website to help him connect with
@@ -155,7 +152,6 @@ const UPNEXT = {
   thumbnails: [
     'https://i.imgur.com/3oQLLta.png'
   ],
-  url: 'https://upnextmoviedb.herokuapp.com/index',
   description:
   `
   Watching movies with friends is always fun - if you can agree on what to watch! UpNext was one of my first projects to use with friends.
