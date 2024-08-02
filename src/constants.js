@@ -1,5 +1,25 @@
+const SCUBIBRANCHES = {
+  name: 'ScubiBranches (2024)',
+  subtitle: 'Dive Log App',
+  thumbnails: [
+    'https://i.imgur.com/XNFHeII.png'
+  ],
+  url: 'https://dive-log-next.vercel.app/',
+  description:
+  `
+  As dive fanatics, I wanted to create a dive log app that would be easy to use for me and my wife. The app is nudibranch themed, as we love these little creatures!
+  `,
+  description2:
+  `
+  Many dive log apps are either too complicated or too rich in features (plus paid), so I decided to build my own. 
+  The app is built with Next.js and uses MongoDB for storage, NextAuth for authentication, Cloudinary for image hosting and Leaflet to render maps. 
+  This was a fun project to get started again with Next and use the new App router and its server actions.
+  `
+};
+
+
 const CODEZILLA = {
-  name: 'Rabobank (2021)',
+  name: 'Rabobank (2021-2024)',
   subtitle: 'Design System Engineer',
   thumbnails: [
     'https://i.imgur.com/XmjyC99.png'
@@ -165,6 +185,7 @@ const UPNEXT = {
 };
 
 export const PAGE_DETAILS = [
+  SCUBIBRANCHES,
   CODEZILLA,
   ZEELO,
   LEOVEGAS,
