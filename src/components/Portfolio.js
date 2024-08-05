@@ -45,6 +45,16 @@ const Container = styled.div`
   & div div {
     overflow: visible;
   }
+
+  & .carousel-dots button::before {
+    color: #88af3e !important;
+    opacity: .3 !important;
+  }
+
+  & .carousel-dots-active button::before {
+    color: #88af3e !important;
+    opacity: 1 !important;
+  }
 `;
 
 const Arrow = styled.img`

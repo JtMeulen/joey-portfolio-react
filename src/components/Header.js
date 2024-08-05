@@ -36,4 +36,5 @@ const Text = styled.span`
   color: var(--color-text-invert);
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 `;

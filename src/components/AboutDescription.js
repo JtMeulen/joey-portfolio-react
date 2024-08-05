@@ -1,25 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getYearsSince } from "../utils/getYearsSince";
-
 export default () => (
   <Container>
     <Inner>
       <Text>
-        Hello! I am Joey, a {getYearsSince("1989-02-16")}-year-old frontend web
-        developer from Amsterdam, the Netherlands.
+        Hello <span class="wave">👋</span>! My name is Joey, and I'm a Dutch
+        frontend web developer living in Barcelona, Spain. I have been coding as
+        a hobby for many years, and in 2018, I officially joined the development
+        industry.
         <br />
         <br />
-        After having coded at home as a hobby for a while, I officially joined
-        the development industry at the start of 2018. I have since been
-        developing websites professionally, focusing on ReactJs, Node.js and
-        GraphQl​.
+        Over the years, I have gained extensive experience in developing
+        websites using <em>React.js</em>, <em>Node.js</em>, and <em>GraphQl</em>
+        . Recently, my focus has shifted towards developing design systems using
+        web components, specifically with <em>Stencil.js</em> and <em>Lit</em>.
         <br />
         <br />
-        With over {getYearsSince("2018-01-01")} years of working experience, my
-        main focus has shifted towards developing design systems using web
-        components. React.js continues to be a significant part of my work.
+        With a passion for clean and efficient code, I strive to create
+        user-friendly and visually appealing web applications. I believe in
+        continuous learning and staying up-to-date with the latest technologies
+        and best practices in the industry.
       </Text>
     </Inner>
   </Container>
@@ -33,6 +34,10 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #131313;
   }
 `;
 
@@ -48,4 +53,44 @@ const Inner = styled.div`
 
 const Text = styled.p`
   margin: 8px 0;
+  & em {
+    font-weight: normal;
+    font-style: normal;
+    color: #88af3e;
+  }
+
+  & .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 `;

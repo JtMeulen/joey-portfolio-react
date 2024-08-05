@@ -9,7 +9,7 @@ export default () => (
         Date of birth: 16/02/1989
       </Text>
       <Text>
-        Email: joeytermeulen@gmail.com
+        Email: <a href="mailto:joeytermeulen@gmail.com">joeytermeulen@gmail.com</a>
       </Text>
       <Text>
         Location: Barcelona, Spain
@@ -36,6 +36,10 @@ const Container = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1c1c1c;
+  }
 `;
 
 const Inner = styled.div`
@@ -47,6 +51,12 @@ const Inner = styled.div`
 
 const Text = styled.p`
   margin: 8px 0;
+
+  & a {
+    color: var(--color-text-invert);
+    text-decoration: none;
+    transition: color .2s linear;
+  }
 `;
 
 const IconLink = styled.a`

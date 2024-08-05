@@ -14,3 +14,6 @@ export {default as nodejs} from './nodejs-original-wordmark.svg';
 export {default as react} from './react-original.svg';
 export {default as redux} from './redux-original.svg';
 export {default as unity} from './unity.svg';
+export {default as nextjs} from './next-js-svgrepo-com.svg';
+export {default as lit} from './lit-1.svg';
+export {default as stencil} from './stencil-seeklogo.svg';

@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --color-background-dark: #343434;
     --color-text: black;
     --color-text-invert: white;
+    --logo-fill: black;
   }
 
   html, body {
@@ -19,10 +20,12 @@ const GlobalStyle = createGlobalStyle`
     background: var(--color-background-light);
     color: var(--color-text);
 
-    /* @media (prefers-color-scheme: dark) {
-      --color-background-light: #585858;
+    @media (prefers-color-scheme: dark) {
+      --color-background-light: #141414;
+      --color-background-dark: #1f1f1f;
       --color-text: white;
-    } */
+      --logo-fill: white;
+    }
   }
 `;
 
